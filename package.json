@@ -12,6 +12,7 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
+    "prettier": "^2.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -25,7 +26,8 @@
     "eject": "react-scripts eject",
     "server": "nodemon backend/bin/www",
     "client": "cd frontend && react-scripts start",
-    "server-with-client": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "server-with-client": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "pretty": "prettier --write \"./**/*.{js,jsx,json}\""
   },
   "eslintConfig": {
     "extends": [
